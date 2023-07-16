@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Counter from './Components/Counter';
+import DecreaseByThreeCounter from './Components/DecreaseByThreeCounter';
+import DecreaseCounter from './Components/DecreaseCounter';
+import IncreaseByTwoCounter from './Components/IncreaseByTwoCounter';
+import IncreaseCounter from './Components/IncreaseCounter';
+import ResetCounter from './Components/ResetCounter';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Counter/>
+      <IncreaseCounter/>
+      <IncreaseByTwoCounter/>
+      <DecreaseCounter/>
+      <DecreaseByThreeCounter/>
+      <ResetCounter/>
     </div>
-  );
+  )
 }
-
-export default App;
