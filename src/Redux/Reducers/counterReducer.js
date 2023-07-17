@@ -1,5 +1,6 @@
 import * as actionTypes from "../Actions/actionTypes";
 
+const INITIAL_STATE = 0 // like state of the class
 
 /**
  * @param {number} state 
@@ -8,8 +9,10 @@ import * as actionTypes from "../Actions/actionTypes";
  * @param {number} action.payload
  */
 
+// reducer is using for changing the old state
+const counterReducer = (state = INITIAL_STATE, action) => {
 
-const counterReducer = (state = 0, action) => {
+  console.log(action)
 
   let newState; // to protect the original state
   switch (action.type) {

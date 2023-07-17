@@ -10,7 +10,6 @@ class Counter extends Component {
 }
 
 function mapStateToProps(state){
-  return { counter: state.counterReducer }
+  return { counter: state.counterReducer } // fetch the counterReducer from state and set it as "counter"s value. "counter" will act as a "prop"
 }
-
-export default connect(mapStateToProps)(Counter)
+export default connect(mapStateToProps)(Counter) // and then it connect to our component "Counter"
