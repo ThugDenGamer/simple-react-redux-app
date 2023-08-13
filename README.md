@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Simple React-Redux App
+Make counter with 6 components and bind the actions from redux store.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Check the comment lines
+If you want to understand how all these things happen, check the comment lines.
 
 ## Available Scripts
 
